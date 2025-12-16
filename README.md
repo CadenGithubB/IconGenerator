@@ -5,8 +5,9 @@
 1. Edit `icons/assets/iconsheet.png` (32x32 tiles, 1px spacing).
 2. Add/update entries in `icons/iconsheet.json` (name + row/col).
 3. Run `python3 icons/scripts/generate_icons.py` (regenerates `icons_embedded.cpp`).
-4. Build + flash firmware.
-5. Verify:
+4. Move `icons_embedded.cpp` to the Folder for the Hardware One project.
+5. Build + flash firmware.
+6. Verify:
    - `http://<device-ip>/icons/test`
    - `http://<device-ip>/api/icon?name=folder`
 
