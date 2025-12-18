@@ -14,11 +14,10 @@
 ### Adding/Editing Icon Registry
 3. **Add/update entries in `icons/iconsheet.json`**
    - Add: `{"name": "icon_name", "row": X, "col": Y}`
-   - Row/col are 0-indexed
 
-### Export icon
+### Export icons
 4. **Run `python3 icons/scripts/generate_icons.py`**
-   - Reads manifest + iconsheet.png → generates `icons_embedded.cpp`
+   - Reads `icons/iconsheet.json` + `icons/assets/iconsheet.png` → generates `icons_embedded.cpp`
    - **Warning:** This completely regenerates the file and as a result it erases previous content
 
-5. **Great Success.** You now have 32x32 icons for your project in a format that requires no heap allocation.
+### **Great Success.** You now have 32x32 icons for your project in a format that requires no heap allocation.
